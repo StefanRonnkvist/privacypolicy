@@ -1,0 +1,14 @@
+Privacy Policy provides a clear, focused way to read the privacy policy and warranty information for StefanRonnkvist.com.
+
+Review how information may be collected, used, and shared. Read about third-party services, the warranty disclaimer, and how policy changes are communicated. The effective date is displayed with the policy so you can identify the version you are reading.
+
+A dedicated Help tab explains how to navigate the app, what the policy covers, and where third-party privacy practices apply.
+
+Features:
+- Complete policy in a clean, scrollable layout
+- Effective date shown with the document
+- Help and policy-scope guidance
+- Responsive presentation for phones and larger screens
+- No account or sign-in required
+
+The policy and help text are bundled with the installed app. This app is a policy viewer; it does not create privacy policies or provide legal advice.
