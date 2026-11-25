@@ -86,7 +86,7 @@
     {
       "label": "Preclean Android Release Locks",
       "type": "shell",
-      "command": "pwsh",
+      "command": "powershell",
       "dependsOn": [
         "Flutter: Fix Apple Ephemeral Packages"
       ],
@@ -144,10 +144,26 @@
       "problemMatcher": []
     },
     {
+      "label": "Clean Windows Build",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Remove-Item -Recurse -Force build\\windows -ErrorAction SilentlyContinue; exit 0"
+      ],
+      "presentation": {
+        "reveal": "never",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "Build Release Windows",
       "type": "shell",
       "command": "flutter build windows --release",
       "dependsOn": [
+        "Clean Windows Build"
       ],
       "group": "build",
       "presentation": {
@@ -173,7 +189,7 @@
     {
       "label": "Flutter: Fix Apple Ephemeral Packages",
       "type": "shell",
-      "command": "pwsh",
+      "command": "powershell",
       "args": [
         "-NoProfile",
         "-ExecutionPolicy",
@@ -187,7 +203,7 @@
     {
       "label": "Flutter: Version Bump",
       "type": "shell",
-      "command": "pwsh",
+      "command": "powershell",
       "args": [
         "-NoProfile",
         "-ExecutionPolicy",
@@ -202,7 +218,7 @@
       "label": "Docs: Audit Store Listing, Help and README",
       "detail": "Checks that store_listing/, the Help tab and README.md describe the app it ships from.",
       "type": "shell",
-      "command": "pwsh",
+      "command": "powershell",
       "args": [
         "-NoProfile",
         "-ExecutionPolicy",
@@ -218,5 +234,25 @@
       },
       "problemMatcher": []
     },
+    {
+      "label": "Git: Commit and Push All",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/git-commit-push.ps1",
+        "-Message",
+        "Update project"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
   ]
 }
+

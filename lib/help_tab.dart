@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Explains the app's purpose and how to read the included policy.
 class HelpTab extends StatelessWidget {

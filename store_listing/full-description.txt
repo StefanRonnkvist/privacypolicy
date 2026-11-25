@@ -1,4 +1,4 @@
-Privacy Policy provides a clear, focused way to read the privacy policy and warranty information for StefanRonnkvist.com.
+Privacy Policy provides a clear, focused way to read the privacy policy and warranty information for StefanRonnkvist.com. The document opens directly from an animated launch screen, with no account or sign-in required.
 
 Review how information may be collected, used, and shared. Read about third-party services, the warranty disclaimer, and how policy changes are communicated. The effective date is displayed with the policy so you can identify the version you are reading.
 
@@ -8,6 +8,7 @@ Features:
 - Complete policy in a clean, scrollable layout
 - Effective date shown with the document
 - Help and policy-scope guidance
+- Bottom navigation between Policy and Help tabs
 - Responsive presentation for phones and larger screens
 - No account or sign-in required
 

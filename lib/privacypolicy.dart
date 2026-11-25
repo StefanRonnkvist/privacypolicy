@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Displays the complete privacy policy as a centered list of sections.
 class PrivacyTab extends StatelessWidget {

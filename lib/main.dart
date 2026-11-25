@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:privacypolicy/splash_screen.dart';
 
 /// Starts the Flutter application with [MainApp] as the root widget.

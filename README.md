@@ -10,7 +10,8 @@ account or sign-in.
 - Help tab explaining app navigation, policy scope, third-party services, and
 	policy updates
 - Responsive, width-constrained layout for phones and larger displays
-- Animated launch screen
+- Animated launch screen (fade, scale, and pulse effects driven by a single
+	animation controller)
 - Android, iOS, web, Windows, macOS, and Linux Flutter targets
 
 This app is a policy viewer. It does not generate privacy policies or provide
@@ -19,6 +20,9 @@ legal advice.
 ## Requirements
 
 - Flutter with a Dart SDK compatible with `^3.12.2`
+- Android builds need Gradle 9.3.1+ and Android Gradle Plugin 9.1.1+ (already
+	configured in `android/gradle/wrapper/gradle-wrapper.properties` and
+	`android/settings.gradle.kts`)
 - Platform toolchains for each target you intend to build
 - A configured Android signing key for Android release builds
 
@@ -64,14 +68,16 @@ version.
 ## Project layout
 
 - `lib/main.dart` configures and starts the Material app.
-- `lib/splash_screen.dart` contains the launch sequence and home navigation.
+- `lib/splash_screen.dart` contains the animated launch sequence, the bottom
+	navigation shell, and the home screen.
 - `lib/privacypolicy.dart` owns the displayed policy content and layout.
 - `lib/help_tab.dart` contains the in-app help content.
-- `store_listing/` contains English store metadata ready for release portals.
+- `store_listing/` contains English store metadata ready for release portals
+	(`short-description.txt` and `full-description.txt`).
 
 ## Store publishing
 
-Review the files under `store_listing/en-US` before each submission. Add the
+Review the files under `store_listing/` before each submission. Add the
 final support URL, privacy-policy URL, screenshots, category, and required
 store declarations directly in the relevant publishing portal; those values
 are not guessed in this repository.

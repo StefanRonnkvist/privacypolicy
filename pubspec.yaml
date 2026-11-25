@@ -1,7 +1,7 @@
 name: privacypolicy
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.1.4+5
+version: 0.1.10+11
 
 environment:
   sdk: ^3.12.2
@@ -10,15 +10,17 @@ dependencies:
   flutter:
     sdk: flutter
 
+  material_ui: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
   msix: ^3.16.12
 
+  csv_plus: any
 flutter:
   uses-material-design: true
   assets:
     - assets/privacypolicy.png 
 msix_config:
-  msix_version: 0.1.4.5
+  msix_version: 0.1.10.11
